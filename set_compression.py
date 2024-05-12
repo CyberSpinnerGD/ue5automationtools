@@ -8,7 +8,7 @@ import unreal
 #Importamos la asset library
 AssetLibrary = unreal.EditorAssetLibrary()
 
-#Mapeamos el 
+#Mapeamos sufijos de nombre de archivos de texturas con su correspondiente tipo de compresion
 COMPRESSION_MAPPING = {
     "_N": unreal.TextureCompressionSettings.TC_NORMALMAP, # normalMap
     "_D": unreal.TextureCompressionSettings.TC_DEFAULT, # albedo/diffuse
@@ -36,7 +36,7 @@ def validate_compression_settings(directory: str, apply_fix: bool = True):
         #Obtengo el nombre de la textura
         textureName = str(texture.get_fname())
         
-        #Comprobamos que no vamos a coger assets que no sean una Texture2D, si 
+        #Comprobamos que no vamos a coger assets que no sean una Texture2D
         if not isinstance(texture , unreal.Texture2D):
             continue
         
