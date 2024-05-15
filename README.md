@@ -16,8 +16,6 @@ Desarrollados durante  periodo formativo impartido por el artisa técnico Karol 
 
 **Validador de Compresión**
 
-**Autor:** Daniel Dorado 2024
-
 **Propósito:** Automatizar los ajustes de compresión para diferentes tipos de texturas en Unreal Engine 5.3.
 
 | Función | Parámetros | Descripción |
