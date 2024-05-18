@@ -2,13 +2,13 @@
 
 Este repositorio contiene scripts de automatización en UE5.3
 
-Desarrollados durante  periodo formativo impartido por el artisa técnico Karol Kowalczyk (CD Projeck Red) 
-
+Desarrollados durante periodo formativo impartido por el artisa técnico Karol Kowalczyk (CD Projeck Red)
 
 ## Índice
 
 1. [fix_textures_compression.py](#fix_textures_compressionpy)
 2. [instance_material_vector_set.py](#instance_material_vector_setpy)
+3. [find_duplicated_static_meshes.py](#find_duplicated_static_meshespy)
 
 ---
 
@@ -56,3 +56,27 @@ Desarrollados durante  periodo formativo impartido por el artisa técnico Karol 
   - Restaura todos los parámetros de la instancia de material para evitar conflictos.
   - Establece nuevos valores para los parámetros vectoriales especificados.
   - Actualiza la instancia de material para aplicar los cambios.
+
+---
+
+## 🔍 find_duplicated_static_meshes.py
+
+**Detector de Mallas Estáticas Duplicadas**
+
+**Propósito:** Identificar y reportar mallas estáticas duplicadas en el proyecto de Unreal Engine 5.3.
+
+| Función | Parámetros | Descripción |
+| ------- | ---------- | ----------- |
+| `find_duplicated_meshes` | `directory: str` | Encuentra y lista las mallas estáticas duplicadas en el directorio especificado. |
+
+### Detalles de la Función
+
+- **find_duplicated_meshes(directory: str):**
+  - **Parámetros:**
+    - `directory` (str): El directorio que contiene las mallas estáticas a verificar.
+  - **Descripción:** Recorre el directorio especificado en busca de mallas estáticas duplicadas basándose en sus propiedades y reporta las coincidencias encontradas.
+
+- **Uso:**
+  - Analiza las mallas estáticas en el directorio especificado.
+  - Compara las propiedades de las mallas para identificar duplicados.
+  - Genera un informe de las mallas duplicadas encontradas.
